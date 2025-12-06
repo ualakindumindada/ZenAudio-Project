@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --primary-color: #ff3c00;
+  --secondary-color: #1a1a1a;
+  --background-color: #111111;
+  --text-color: #ffffff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--background-color);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  padding: 5px 20px;
+  background-color: transparent;
+  position: fixed;
+  z-index: 100;
+}
+.logo img {
+  width: 70px;
+}
+nav .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+nav .nav-links li a {
+  color: var(--text-color);
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+nav .nav-links li a:hover {
+  font-weight: 600;
+}
+
+/* Hero Section */
+.hero {
+  position: relative; /* Allows absolute positioning for children */
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center; /* Centers H1 horizontally */
+  align-items: center; /* Centers H1 vertically */
+  background-color: var(--background-color); /* Optional: dark background */
+}
+
+/* H1 Text Styling */
+.hero h1 {
+  color: var(--text-color); /* Change to any color you like */
+  font-size: 10rem;
+  z-index: 10; /* Makes sure text is above images */
+  text-align: center;
+  line-height: 90%;
+  font-weight: 400;
+  position: relative;
+}
+
+/* Images Positioned at Four Corners */
+.hero div:nth-child(2) img {
+  /* Top-left */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400px; /* Adjust size as needed */
+  border-radius: 5px;
+}
+
+.hero div:nth-child(3) img {
+  /* Top-right */
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 150px;
+  border-radius: 5px;
+}
+
+.hero div:nth-child(4) img {
+  /* Bottom-left */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 550px;
+  border-radius: 5px;
+}
+
+.hero div:nth-child(5) img {
+  /* Bottom-right */
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 500px;
+  border-radius: 5px;
+}
