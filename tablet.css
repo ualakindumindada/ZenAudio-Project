@@ -1,0 +1,199 @@
+/* ------------------------------
+   HAMBURGER MENU (MOBILE/TABLET)
+---------------------------------*/
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 28px;
+  height: 3px;
+  background: var(--text-color);
+  transition: 0.3s ease;
+}
+
+/* Hamburger animation */
+.hamburger.active span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* ------------------------------
+   RESPONSIVE FOR TABLET + MOBILE
+---------------------------------*/
+
+@media (max-width: 1024px) {
+  .hero {
+    height: 70vh;
+  }
+  nav {
+    padding: 0;
+  }
+  nav .nav-links {
+    gap: 20px;
+  }
+
+  .hero h1 {
+    font-size: 6rem;
+  }
+
+  .hero div:nth-child(2) img {
+    width: 180px;
+    height: 140px;
+    object-fit: cover;
+  }
+  .hero div:nth-child(3) img {
+    width: 140px;
+  }
+  .hero div:nth-child(4) img {
+    width: 150px;
+  }
+  .hero div:nth-child(5) img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+  .second-section {
+    width: 90%;
+    padding: 20px;
+  }
+   .leftSide {
+    padding: 0;
+  }
+  .rightSide {
+    padding: 0;
+  } 
+
+  .fifth-section .image1 {
+    width: 200px;
+    height: 300px;
+    right: 120px;
+  }
+  .fifth-section .image2 {
+    width: 400px;
+    height: 400px;
+  }
+  .fifth-section .image3 {
+    width: 200px;
+    height: 300px;
+    left: 120px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    padding: 0;
+  }
+  /* Show hamburger */
+  .hamburger {
+    display: flex;
+  }
+
+  /* Hide nav links initially */
+  nav .nav-links {
+    position: absolute;
+    top: 70px;
+    left: -100%;
+    flex-direction: column;
+    width: 100%;
+    background: #111;
+    text-align: center;
+    padding: 20px 0;
+    gap: 20px;
+    transition: 0.4s ease;
+  }
+
+  /* Show when active */
+  nav .nav-links.active {
+    left: 0;
+  }
+
+  .hero h1 {
+    font-size: 3.5rem;
+  }
+
+  .hero div img {
+    width: 160px;
+  }
+
+  .second-section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .rightSide p {
+    font-size: 40px;
+  }
+
+  .leftSide img {
+    height: 800px;
+  }
+  .leftSide {
+    padding: 0;
+    width: 90%;
+  }
+  .rightSide {
+    padding: 0;
+    width: 90%;
+  }
+  .third-section img {
+    height: 420px;
+  }
+  .fourth-section h3 {
+    font-size: 40px;
+  }
+
+  .fifth-section .image1 {
+    width: 100px;
+    height: 150px;
+    right: 80px;
+  }
+  .fifth-section .image2 {
+    width: 200px;
+    height: 200px;
+  }
+  .fifth-section .image3 {
+    width: 100px;
+    height: 150px;
+    left: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    padding: 0;
+  }
+  .hero h1 {
+    font-size: 2.8rem;
+    line-height: 100%;
+  }
+
+  .hero div img {
+    width: 120px;
+  }
+
+  .rightSide p {
+    font-size: 26px;
+    line-height: 130%;
+  }
+  .leftSide {
+    padding: 0;
+  }
+  .rightSide {
+    padding: 0;
+  }
+  .leftSide img {
+    height: 450px;
+  }
+}
