@@ -66,12 +66,12 @@
     width: 90%;
     padding: 20px;
   }
-   .leftSide {
+  .leftSide {
     padding: 0;
   }
   .rightSide {
     padding: 0;
-  } 
+  }
 
   .fifth-section .image1 {
     width: 200px;
@@ -167,6 +167,27 @@
     width: 100px;
     height: 150px;
     left: 80px;
+  }
+  .sixth-section {
+    display: flex;
+    width: 100%;
+    margin: 100px 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .sixth-section .section-group {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 20px;
+    justify-content: center;
+  }
+  .sixth-section .section-group a i {
+    font-size: 30px;
+  }
+  .sixth-section h4 {
+    font-size: 32px;
+    line-height: 110%;
   }
 }
 

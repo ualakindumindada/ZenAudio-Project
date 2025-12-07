@@ -210,3 +210,42 @@ nav .nav-links li a:hover {
   left: 250px;
   border-radius: 10px;
 }
+.sixth-section {
+  display: flex;
+  width: 100%;
+  margin: 250px 0;
+  align-items: center;
+  justify-content: center;
+}
+.sixth-section .section-group {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  gap: 20px;
+  align-items: left;
+  justify-content: center;
+}
+.sixth-section .section-group a {
+  width: 100px;
+  height: 100px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.sixth-section .section-group a i{
+  font-size: 30px;
+  color: var(--text-color);
+  text-decoration: none;
+}
+.sixth-section h4 {
+  font-size: 50px;
+  text-align: left;
+  color: var(--text-color);
+  font-weight: 400;
+  line-height: 90%;
+}
