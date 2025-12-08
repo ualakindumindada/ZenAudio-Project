@@ -30,7 +30,6 @@
 /* ------------------------------
    RESPONSIVE FOR TABLET + MOBILE
 ---------------------------------*/
-
 @media (max-width: 1024px) {
   .hero {
     height: 70vh;
@@ -63,7 +62,7 @@
     object-fit: cover;
   }
   .second-section {
-    width: 90%;
+    width: 80%;
     padding: 20px;
   }
   .leftSide {
@@ -86,6 +85,29 @@
     width: 200px;
     height: 300px;
     left: 120px;
+  }
+
+  .seventh-section .image-group {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+  }
+  .seventh-section .image-group .left-side {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .seventh-section .image-group .right-side {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .seventh-section .image-group img {
+    width: 100px;
+    height: auto;
   }
 }
 
