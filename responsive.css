@@ -119,8 +119,8 @@
   }
 
   .ninth-section .content-group .left-side img {
-    width: 500px;
-    height: 1000px;
+    width: 400px;
+    height: 600px;
     object-fit: cover;
     border-radius: 10px;
   }
@@ -129,6 +129,27 @@
     color: var(--text-color);
     font-weight: 500;
     line-height: 120%;
+  }
+
+  .tenth-section .content-group {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+  }
+  .tenth-section .content-group .left-side .top-section h2 {
+    font-size: 75px;
+    color: var(--text-color);
+    font-weight: 500;
+    line-height: 120%;
+  }
+  .tenth-section .content-group .right-side img {
+    width: 400px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 10px;
   }
 }
 
@@ -285,6 +306,55 @@
     padding: 16px 32px;
     border-radius: 30px;
   }
+
+  .tenth-section .content-group {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+  }
+  .tenth-section .content-group .left-side {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 0px;
+  }
+
+  .tenth-section .content-group .left-side .top-section h2 {
+    font-size: 40px;
+    color: var(--text-color);
+    font-weight: 500;
+    line-height: 120%;
+  }
+  .tenth-section .content-group .left-side .bottom-section h4 {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--grey-text-color);
+    padding-bottom: 5px;
+  }
+  .tenth-section .content-group .left-side .bottom-section a {
+    font-size: 16px;
+    color: var(--background-color);
+    font-weight: 500;
+    text-decoration: none;
+    background-color: var(--background-white);
+    padding: 16px 32px;
+    border-radius: 30px;
+  }
+  .tenth-section .content-group .right-side {
+    padding-left: 20px;
+  }
+  .tenth-section .content-group .right-side img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -349,5 +419,17 @@
   .eighth-section .content-group .right-side .bottom-section span {
     font-size: 14px;
     color: var(--grey-text-color);
+  }
+  .ninth-section .content-group .left-side img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .tenth-section .content-group .right-side img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
   }
 }
