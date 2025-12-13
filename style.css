@@ -487,3 +487,62 @@ nav .nav-links li a:hover {
   object-fit: cover;
   border-radius: 10px;
 }
+
+.eleventh-section {
+  display: flex;
+  width: 100%;
+  margin: 100px 0;
+  align-items: center;
+  justify-content: center;
+  /* background-color: var(--secondary-color); */
+  padding: 30px 0;
+}
+.eleventh-section .content-group {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+.eleventh-section .content-group .card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding: 20px;
+  gap: 10px;
+}
+.eleventh-section .content-group .card .image-div{
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-grey-color);
+  border-radius: 50%;
+}
+.eleventh-section .content-group .card .text-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding: 10px;
+  gap: 10px;
+}
+.eleventh-section .content-group .card img{
+  width: 30px;
+  height: 30px;
+}
+.eleventh-section .content-group .card h4{
+  font-size: 24px;
+  color: var(--text-color);
+  font-weight: 500;
+  line-height: 100%;
+  margin-bottom: -25px;
+}
+.eleventh-section .content-group .card h5{
+  font-size: 16px;
+  color: var(--grey-text-color);
+  font-weight: 500;
+}
