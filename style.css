@@ -505,7 +505,7 @@ nav .nav-links li a:hover {
   justify-content: center;
   gap: 60px;
 }
-.eleventh-section .content-group .card{
+.eleventh-section .content-group .card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -513,7 +513,7 @@ nav .nav-links li a:hover {
   padding: 20px;
   gap: 10px;
 }
-.eleventh-section .content-group .card .image-div{
+.eleventh-section .content-group .card .image-div {
   width: 70px;
   height: 70px;
   display: flex;
@@ -522,7 +522,7 @@ nav .nav-links li a:hover {
   background-color: var(--light-grey-color);
   border-radius: 50%;
 }
-.eleventh-section .content-group .card .text-div{
+.eleventh-section .content-group .card .text-div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -530,19 +530,72 @@ nav .nav-links li a:hover {
   padding: 10px;
   gap: 10px;
 }
-.eleventh-section .content-group .card img{
+.eleventh-section .content-group .card img {
   width: 30px;
   height: 30px;
 }
-.eleventh-section .content-group .card h4{
+.eleventh-section .content-group .card h4 {
   font-size: 24px;
   color: var(--text-color);
   font-weight: 500;
   line-height: 100%;
   margin-bottom: -25px;
 }
-.eleventh-section .content-group .card h5{
+.eleventh-section .content-group .card h5 {
   font-size: 16px;
   color: var(--grey-text-color);
   font-weight: 500;
+}
+
+.twelfth-section {
+  display: flex;
+  width: 100%;
+  margin: 100px 0;
+  align-items: center;
+  justify-content: center;
+  /* background-color: var(--secondary-color); */
+  padding: 30px 0;
+}
+.twelfth-section .content-group {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+.twelfth-section .content-group .join-now-section h5 {
+  font-size: 14px;
+  color: var(--text-color);
+  font-weight: 400;
+}
+.twelfth-section .content-group .heading-section h2 {
+  font-size: 80px;
+  color: var(--text-color);
+  font-weight: 500;
+  line-height: 100%;
+  text-align: center;
+}
+
+.twelfth-section .content-group .input-section input {
+  width: 250px;
+  height: 60px;
+  border-radius: 10px;
+  border: none;
+  padding: 0 20px;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: var(--light-grey-color);
+  margin-right: 10px;
+  color: var(--text-color);
+}
+.twelfth-section .content-group .input-section button {
+  width: 100px;
+  height: 60px;
+  border-radius: 30px;
+  border: none;
+  font-size: 28px;
+  font-weight: 100;
+  color: var(--text-color);
+  background-color: var(--primary-color);
 }
