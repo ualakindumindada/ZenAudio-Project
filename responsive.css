@@ -1,7 +1,4 @@
-/* ------------------------------
-   HAMBURGER MENU (MOBILE/TABLET)
----------------------------------*/
-
+/* Hamberger Menu */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -27,9 +24,7 @@
   transform: translateY(-8px) rotate(-45deg);
 }
 
-/* ------------------------------
-   RESPONSIVE FOR TABLET + MOBILE
----------------------------------*/
+/* Laptop Styles */
 @media screen and (max-width: 1024px) {
   .hero {
     height: 70vh;
@@ -40,11 +35,9 @@
   nav .nav-links {
     gap: 20px;
   }
-
   .hero h1 {
     font-size: 6rem;
   }
-
   .hero div:nth-child(2) img {
     width: 180px;
     height: 140px;
@@ -61,17 +54,26 @@
     height: 150px;
     object-fit: cover;
   }
-  .second-section {
+  .second-section .content-group {
+    display: flex;
+    flex-direction: row;
     width: 80%;
-    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
   }
-  .leftSide {
-    padding: 0;
+  .second-section .content-group .left-side img {
+    width: 400px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 10px;
   }
-  .rightSide {
-    padding: 0;
+  .second-section .content-group .right-side h2 {
+    font-size: 45px;
+    color: var(--text-color);
+    font-weight: 500;
+    line-height: 120%;
   }
-
   .fifth-section .image1 {
     width: 200px;
     height: 300px;
@@ -86,7 +88,6 @@
     height: 300px;
     left: 120px;
   }
-
   .seventh-section .image-group {
     display: flex;
     flex-direction: row;
@@ -117,7 +118,6 @@
     justify-content: center;
     gap: 60px;
   }
-
   .ninth-section .content-group .left-side img {
     width: 400px;
     height: 600px;
@@ -130,7 +130,6 @@
     font-weight: 500;
     line-height: 120%;
   }
-
   .tenth-section .content-group {
     display: flex;
     flex-direction: row;
@@ -157,7 +156,6 @@
     margin: 100px 0;
     align-items: center;
     justify-content: center;
-    /* background-color: var(--secondary-color); */
     padding: 30px 0;
   }
   .eleventh-section .content-group {
@@ -168,7 +166,6 @@
     justify-content: center;
     gap: 60px;
   }
-
   .footer-section {
     display: flex;
     width: 100%;
@@ -224,7 +221,6 @@
     color: var(--background-color);
     margin-bottom: 25px;
   }
-
   .footer-section .content-group .newsletter-div .input-div form button {
     width: 80px;
     height: 50px;
@@ -235,7 +231,6 @@
     color: var(--text-color);
     background-color: var(--primary-color);
   }
-
   .footer-section .content-group .option-div {
     display: flex;
     flex-direction: row;
@@ -243,7 +238,6 @@
     align-items: flex-start;
     gap: 50px;
   }
-
   .footer-section .content-group .option-div .option-first-group {
     display: flex;
     flex-direction: row;
@@ -251,7 +245,6 @@
     justify-content: left;
     gap: 50px;
   }
-
   .footer-section
     .content-group
     .option-div
@@ -295,7 +288,6 @@
     color: var(--grey-text-color);
     font-weight: 400;
   }
-
   .footer-section .content-group .option-div .option-second-group {
     display: flex;
     flex-direction: row;
@@ -303,7 +295,6 @@
     justify-content: left;
     gap: 50px;
   }
-
   .footer-section
     .content-group
     .option-div
@@ -348,6 +339,7 @@
   }
 }
 
+/* Tablet Styles */
 @media screen and (max-width: 768px) {
   nav {
     padding: 0;
@@ -369,41 +361,51 @@
     gap: 20px;
     transition: 0.4s ease;
   }
-
   /* Show when active */
   nav .nav-links.active {
     left: 0;
   }
-
   .hero h1 {
     font-size: 3.5rem;
   }
-
   .hero div img {
     width: 160px;
   }
-
   .second-section {
-    flex-direction: column;
+    display: flex;
+    width: 100%;
+    margin: 100px 0;
     align-items: center;
     justify-content: center;
-    gap: 30px;
   }
-
-  .rightSide p {
+  .second-section .content-group {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+  }
+  .second-section .content-group .left-side img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .second-section .content-group .right-side {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 0px;
+  }
+  .second-section .content-group .right-side h2 {
     font-size: 40px;
-  }
-
-  .leftSide img {
-    height: 800px;
-  }
-  .leftSide {
-    padding: 0;
-    width: 90%;
-  }
-  .rightSide {
-    padding: 0;
-    width: 90%;
+    color: var(--text-color);
+    font-weight: 500;
+    line-height: 120%;
   }
   .third-section img {
     height: 420px;
@@ -411,7 +413,6 @@
   .fourth-section h3 {
     font-size: 40px;
   }
-
   .fifth-section .image1 {
     width: 100px;
     height: 150px;
@@ -447,7 +448,6 @@
     font-size: 32px;
     line-height: 110%;
   }
-
   .ninth-section {
     display: flex;
     width: 100%;
@@ -478,7 +478,6 @@
     padding: 20px;
     gap: 0px;
   }
-
   .ninth-section .content-group .right-side .top-section h2 {
     font-size: 40px;
     color: var(--text-color);
@@ -500,7 +499,6 @@
     padding: 16px 32px;
     border-radius: 30px;
   }
-
   .tenth-section .content-group {
     display: flex;
     flex-direction: column-reverse;
@@ -518,7 +516,6 @@
     padding: 20px;
     gap: 0px;
   }
-
   .tenth-section .content-group .left-side .top-section h2 {
     font-size: 40px;
     color: var(--text-color);
@@ -556,7 +553,6 @@
     align-items: center;
     justify-content: center;
   }
-
   .twelfth-section .content-group .input-section {
     display: flex;
     flex-direction: column;
@@ -581,6 +577,7 @@
   }
 }
 
+/* Mobile Styles */
 @media screen and (max-width: 480px) {
   nav {
     padding: 0;
@@ -589,25 +586,15 @@
     font-size: 2.8rem;
     line-height: 100%;
   }
-
   .hero div img {
     width: 120px;
   }
-
-  .rightSide p {
-    font-size: 26px;
-    line-height: 130%;
+  .second-section .content-group .left-side img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
   }
-  .leftSide {
-    padding: 0;
-  }
-  .rightSide {
-    padding: 0;
-  }
-  .leftSide img {
-    height: 450px;
-  }
-
   .eighth-section .content-group {
     display: flex;
     flex-direction: column;
